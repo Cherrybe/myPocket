@@ -1,26 +1,35 @@
 @import "tailwindcss";
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "../styles/borderRadius.css";
+@import "../styles/boxShadows.css";
+@import "../styles/colors.css";
+@import "../styles/fonts.css";
+@import "../styles/gap.css";
+@import "../styles/lineHeight.css";
+@import "../styles/spacing.css";
+@import "../styles/textSize.css";
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontFamilyPoppins);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fontFamilyInter);
+  padding: 0;
+  color: var(--base-black);
+  font-size: var(--ts-body-md);
+  background-color: var(--base-white);
+}
+
+.test-variable {
+  font-size: var(--ts-body-2xl);
+  color: var(--primary-600);
 }
