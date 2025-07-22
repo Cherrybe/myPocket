@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority'
-import { CombinedTextColorVariants } from '@/shared/color.cva'
+import { CombinedTextColorVariants } from '../../../shared/color.cva'
 
 export const HeadlineVariants = cva('font-sans', {
   variants: {

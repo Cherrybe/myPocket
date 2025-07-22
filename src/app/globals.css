@@ -1,16 +1,130 @@
 @import "tailwindcss";
-/* @import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities"; */
 
-@import "../styles/borderRadius.css";
-@import "../styles/boxShadows.css";
+@theme inline {
+  /* Base */
+  --white: var(--white);
+  --grey: var(--grey);
+  --grey-body: var(--grey-body);
+  --grey-label: var(--grey-label);
+  --accent: var(--accent);
+  --orange: var(--orange);
+  --stroke: var(--stroke);
+  --line: var(--line);
+
+  /* Primary (Indigo Blue) */
+  --primary-900: var(--primary-900);
+  --primary-800: var(--primary-800);
+  --primary-700: var(--primary-700);
+  --primary-600: var(--primary-600);
+  --primary-500: var(--primary-500);
+  --primary-400: var(--primary-400);
+  --primary-300: var(--primary-300);
+  --primary-200: var(--primary-200);
+  --primary-100: var(--primary-100);
+  --primary: var(--primary);
+
+  /* Secondary (Green) */
+  --secondary-900: var(--secondary-900);
+  --secondary-800: var(--secondary-800);
+  --secondary-700: var(--secondary-700);
+  --secondary-600: var(--secondary-600);
+  --secondary-500: var(--secondary-500);
+  --secondary-400: var(--secondary-400);
+  --secondary-300: var(--secondary-300);
+  --secondary-200: var(--secondary-200);
+  --secondary-100: var(--secondary-100);
+  --secondary: var(--secondary);
+}
+
+
+@layer components {
+  .body-2xs {
+    font-size: var(--ts-body-2xs);
+    line-height: var(--lh-mobile);
+  }
+
+  .body-xs {
+    font-size: var(--ts-body-xs);
+    line-height: var(--lh-mobile);
+  }
+
+  .body-sm {
+    font-size: var(--ts-body-sm);
+    line-height: var(--lh-mobile);
+  }
+
+  .body-md {
+    font-size: var(--ts-body-md);
+    line-height: var(--lh-tablet);
+  }
+
+  .body-lg {
+    font-size: var(--ts-body-lg);
+    line-height: var(--lh-tablet);
+  }
+
+  .body-xl {
+    font-size: var(--ts-body-xl);
+    line-height: var(--lh-tablet);
+  }
+
+  .body-2xl {
+    font-size: var(--ts-body-2xl);
+    line-height: var(--lh-tablet);
+  }
+
+  .heading-3xs {
+    font-size: var(--ts-header-3xs);
+    line-height: var(--lh-mobile);
+  }
+
+  .heading-2xs {
+    font-size: var(--ts-header-2xs);
+    line-height: var(--lh-mobile);
+  }
+
+  .heading-xs {
+    font-size: var(--ts-header-xs);
+    line-height: var(--lh-mobile);
+  }
+
+  .heading-sm {
+    font-size: var(--ts-header-sm);
+    line-height: var(--lh-mobile);
+  }
+
+  .heading-md {
+    font-size: var(--ts-header-md);
+    line-height: var(--lh-tablet);
+  }
+
+  .heading-lg {
+    font-size: var(--ts-header-lg);
+    line-height: var(--lh-tablet);
+  }
+
+  .heading-xl {
+    font-size: var(--ts-header-xl);
+    line-height: var(--lh-tablet);
+  }
+
+  .heading-2xl {
+    font-size: var(--ts-header-2xl);
+    line-height: var(--lh-tablet);
+  }
+
+  .heading-3xl {
+    font-size: var(--ts-header-3xl);
+    line-height: var(--lh-tablet);
+  }
+}
+
 @import "../styles/colors.css";
 @import "../styles/fonts.css";
-@import "../styles/gap.css";
 @import "../styles/lineHeight.css";
-@import "../styles/spacing.css";
 @import "../styles/textSize.css";
+
+
 
 h1,
 h2,

@@ -73,7 +73,7 @@ export const DefaultHeadingLevel: Story = {
 
 export const TailwindTest: Story = {
   render: () => (
-    <div className="p-4 bg-green-200 text-red-600 rounded-md">
+    <div className="bg-green-200 p-3xl text-heading-sm text-primary md:bg-blue-300 lg:bg-red-300">
       Tailwind is working!
     </div>
   ),
