@@ -133,7 +133,7 @@ Run Storybook to explore the component library:
 pnpm storybook
 ```
 
-##✨ Future Improvements
+## ✨ Future Improvements
 - ✅ Add reusable form field components
 - ✅ Dark mode support
 - ⏳ Internationalization (i18n)
