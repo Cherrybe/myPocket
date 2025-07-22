@@ -2,9 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="heading-xl text-[var(--primary-800)]">
+    <h2 className="heading-xl text-(--primary-800)">
       Testing tailwind generated classes
-    </div>
+    </h2>
   );
 }
 

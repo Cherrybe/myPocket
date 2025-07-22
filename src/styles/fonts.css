@@ -1,3 +1,8 @@
+:root {
+  --font-inter: 'Inter', 'Arial', 'Segoe UI';
+  --font-poppins: 'Poppins', 'sans-serif', 'Roboto', 'Open Sans';
+}
+
 /* Poppins font definition */
 @font-face {
   font-family: 'Poppins';
@@ -357,9 +362,4 @@
   font-weight: 900;
   src: url('/assets/fonts/inter/inter-v18-latin-900italic.woff2')
     format('woff2');
-}
-
-:root {
-  --fontFamilyInter: 'Inter', 'Arial', 'Segoe UI';
-  --fontFamilyPoppins: 'Poppins', 'sans-serif', 'Roboto', 'Open Sans';
 }

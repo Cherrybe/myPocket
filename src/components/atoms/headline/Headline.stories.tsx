@@ -71,29 +71,6 @@ export const DefaultHeadingLevel: Story = {
   },
 };
 
-export const TailwindTest: Story = {
-  render: () => (
-    <div className="bg-green-200 p-3xl text-heading-sm text-primary md:bg-blue-300 lg:bg-red-300">
-      Tailwind is working!
-    </div>
-  ),
-};
-
-export const TailwindTest2: Story = {
-  render: () => <div className="test-variable">Tailwind is working!</div>,
-};
-
-// Test story
-export const TestFontAndColor: Story = {
-  render: () => (
-    <div>
-      <p className="text-body-2xl text-primary-600">
-        Test Body 2XS with Primary 600
-      </p>
-    </div>
-  ),
-};
-
 export const HeadingLevel1: Story = {
   args: headingLevel1Args
 }

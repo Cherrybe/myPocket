@@ -1,4 +1,15 @@
+:root {
+  --font-inter: 'Inter', 'Arial', 'Segoe UI';
+  --font-poppins: 'Poppins', 'sans-serif', 'Roboto', 'Open Sans';
+}
+
+@import "../styles/fonts.css";
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 20rem;
+  --breakpoint-sm: 36rem;
+}
 
 @theme inline {
   /* Base */
@@ -34,6 +45,10 @@
   --secondary-200: var(--secondary-200);
   --secondary-100: var(--secondary-100);
   --secondary: var(--secondary);
+
+  /* font family */
+  --font-poppins: var(--font-poppins);
+  --font-inter: var(--font-inter);
 }
 
 
@@ -119,31 +134,61 @@
   }
 }
 
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-poppins);
+  }
+
+  body {
+    font-family: var(--font-inter);
+    background-color: var(--white);
+    padding: 0;
+    color: var(--grey);
+    font-size: var(--ts-body-md);
+  }
+}
+
+@layer utilities {
+  .lh-mobile {
+    line-height: var(--lh-mobile);
+  }
+
+  .lh-tablet {
+    line-height: var(--lh-tablet);
+  }
+
+  /* text color */
+   .text-primary {
+    color: var(--primary);
+  }
+
+  .text-secondary {
+    color: var(--secondary);
+  }
+
+  .text-accent {
+    color: var(--accent);
+  }
+
+  .text-orange {
+    color: var(--orange);
+  }
+
+  .text-grey {
+    color: var(--grey);
+  }
+
+  .text-white {
+    color: var(--white);
+  }
+}
+
+
 @import "../styles/colors.css";
-@import "../styles/fonts.css";
 @import "../styles/lineHeight.css";
 @import "../styles/textSize.css";
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--fontFamilyPoppins);
-}
-
-body {
-  font-family: var(--fontFamilyInter);
-  padding: 0;
-  color: var(--base-black);
-  font-size: var(--ts-body-md);
-  background-color: var(--base-white);
-}
-
-.test-variable {
-  font-size: var(--ts-body-2xl);
-  color: var(--primary-600);
-}
