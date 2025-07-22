@@ -47,7 +47,7 @@ my-pocket/
 ```
 
 ## `package.json` Overview
-- Project Name: comment-app
+- Project Name: myPocket
 - Version: 0.1.0
   
 ##Scripts
