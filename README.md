@@ -51,14 +51,14 @@ my-pocket/
 - Version: 0.1.0
   
 ##Scripts
-`pnpm dev`:	Run the development server with Turbopack
-`pnpm build`:	Create a production build
-`pnpm start`:	Start the production server
-`pnpm lint`:	Run ESLint to check code quality
-`pnpm storybook`:	Launch Storybook for component development
-`pnpm build-storybook`:	Generate the static Storybook build
-`pnpm tailwind:build`:	Build the Tailwind theme CSS file
-`pnpm tailwind:watch`:	Watch and rebuild Tailwind styles
+-`pnpm dev`:	Run the development server with Turbopack
+-`pnpm build`:	Create a production build
+-`pnpm start`:	Start the production server
+-`pnpm lint`:	Run ESLint to check code quality
+-`pnpm storybook`:	Launch Storybook for component development
+-`pnpm build-storybook`:	Generate the static Storybook build
+-`pnpm tailwind:build`:	Build the Tailwind theme CSS file
+-`pnpm tailwind:watch`:	Watch and rebuild Tailwind styles
 
 ## Dependencies
 - Next.js: React framework for server-rendered and hybrid applications
@@ -116,16 +116,16 @@ The project follows atomic design principles, organizing components into atoms, 
 - `Organisms`: Complex UI sections
 - `Utils`: Shared utility functions or helpers
 - `App`: Contains routing logic and layout structure
-- `Templates / Pages`: – App routes and page content
-
 
 ## How it works
 Each component is isolated and documented using Storybook, allowing visual testing and interaction outside of the main application.
 src/components/src/atoms/button/
+```
 │   Button.tsx           # The functional component
 │   Button.types.ts      # Component props and types
 │   Button.stories.tsx   # Storybook stories
 │   Button.cva.ts        # Variant styles with CVA (optional)
+```
 
 ## Visual Documentation
 Run Storybook to explore the component library:
